@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  background-color: #1a1a1a;
+}
+
+header .container {
+  padding: 10px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+header .container .logo {
+  flex-basis: 30%;
+}
+
+header .container .logo img {
+  width: 110px;
+  height: 39px;
+  object-fit: contain;
+}
+
+header .container .search-box {
+  flex-basis: 40%;
+  position: relative;
+}
+
+header .container .search-box input {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #4b4b4b;
+  color: #cecece;
+  border: none;
+  transition: all ease 0.3s;
+  border-radius: 4px;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+  font-size: 14px;
+}
+
+header .container .search-box > i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  color: #cecece;
+}
+
+header .container .search-box input::placeholder {
+  font-size: 14px;
+  --tw-text-opacity: 1;
+  color: #cecece;
+}
+
+header .container .search-box input:focus {
+  outline: none;
+  border: none;
+}
+
+header .container .nav-items {
+  flex-basis: 30%;
+}
+
+header .container .nav-items ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .container .nav-items ul li {
+  list-style: none;
+  margin: 0px 7px;
+  position: relative;
+}
+
+header .container .nav-items ul li > a {
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+header .container .nav-items ul li > a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  transition: background 0.4s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header .container .nav-items ul li > .cart-products {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #e65228;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #fff;
+}
+
+/* JS STYLE */
+
+h1.intro-txt {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.row {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  column-gap: 20px;
+}
+
+.col {
+  flex-basis: 20%;
+  --tw-shadow: 0px 4px 10px rgba(44, 44, 44, 0.05);
+  --tw-shadow-colored: 0px 4px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 10px;
+}
+
+.product-img-box {
+  margin: 0 auto;
+  width: 100%;
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1.main-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 16px;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(44 44 44 / var(--tw-text-opacity));
+  margin-bottom: 8px;
+}
+
+h2.main-price {
+  --tw-text-opacity: 1;
+  color: rgb(44 44 44 / var(--tw-text-opacity));
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2.old-price {
+  margin: 8px 0;
+  --tw-text-opacity: 1;
+  color: rgb(110 110 110 / var(--tw-text-opacity));
+  font-weight: 500;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+h2.no-discount {
+  visibility: hidden;
+}
+
+span.tvsh {
+  --tw-text-opacity: 1;
+  color: rgb(110 110 110 / var(--tw-text-opacity));
+  font-size: 12px;
+}
