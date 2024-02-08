@@ -171,7 +171,7 @@ h1.main-title {
   text-overflow: ellipsis;
   display: -webkit-box !important;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   font-size: 16px;
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -202,4 +202,58 @@ span.tvsh {
   --tw-text-opacity: 1;
   color: rgb(110 110 110 / var(--tw-text-opacity));
   font-size: 12px;
+}
+
+.btns {
+  margin: 10px 0 0 0;
+  display: flex;
+  column-gap: 10px;
+}
+
+.btns .cart-btn {
+  cursor: pointer;
+  border-radius: 8px;
+  flex-basis: 80%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease-in-out;
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(44 44 44 / var(--tw-text-opacity));
+}
+
+.btns .cart-btn > h2.btn-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btns .cart-btn:hover {
+  background-color: #e65228;
+  color: #fff;
+}
+
+.btns .wishlist-btn {
+  border-radius: 8px;
+  cursor: pointer;
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(44 44 44 / var(--tw-text-opacity));
+  font-size: 20px;
+}
+
+.btns .wishlist-btn:hover {
+  background-color: #e65228;
+  color: #fff;
 }
