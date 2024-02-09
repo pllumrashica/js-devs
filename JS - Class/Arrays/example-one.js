@@ -33,3 +33,6 @@ students.forEach((student) => {
 });
 
 document.write(`</table>`);
+
+// Homework - transform text with strings method to uppercase and lowercase ,first product should have different bg.
+// inside product should have array with catehgory 
