@@ -47,6 +47,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 6.7,
+    link: "https://www.filma24.pl/concrete-utopia-2023-me-titra-shqip/",
   },
   {
     id: 1,
@@ -64,6 +65,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 5.6,
+    link: "https://www.filma24.pl/which-brings-me-to-you-2023-me-titra-shqip/",
   },
   {
     id: 2,
@@ -81,6 +83,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 4.9,
+    link: "https://www.filma24.pl/which-brings-me-to-you-2023-me-titra-shqip/",
   },
   {
     id: 3,
@@ -98,6 +101,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 6.5,
+    link: "https://www.filma24.pl/orion-and-the-dark-2024-me-titra-shqip/",
   },
   {
     id: 4,
@@ -109,6 +113,7 @@ let movies = [
     genre: "<a class='genre' href='#'>" + series[7] + "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 7.9,
+    link: "https://www.filma24.pl/radical-2023-me-titra-shqip/",
   },
   {
     id: 5,
@@ -126,6 +131,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 4.3,
+    link: "https://www.filma24.pl/the-inhabitant-2022-me-titra-shqip/",
   },
   {
     id: 6,
@@ -143,6 +149,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 7.4,
+    link: "https://www.filma24.pl/invalid-2023-me-titra-shqip/",
   },
   {
     id: 7,
@@ -163,6 +170,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 5.7,
+    link: "https://www.filma24.pl/the-dirty-south-2023-me-titra-shqip/",
   },
   {
     id: 8,
@@ -180,6 +188,7 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 5.5,
+    link: "https://www.filma24.pl/the-underdoggs-2024-me-titra-shqip/",
   },
   {
     id: 9,
@@ -187,7 +196,7 @@ let movies = [
     title: "The president's man".toUpperCase(),
     year: "(2024)",
     description:
-      "Jaycen Jennings është një ish-yll profesionist i futbollit i larë, i cili ka arritur fundin. Kur Jaycen dënohet të drejtojë një ekip futbolli të padisiplinuar në shërbim të komunitetit, ai e sheh atë si një mundësi për ndryshuar jetën e tij.",
+      "Për shumë njerëz, Joshua McCord është një profesor karizmatik i studimeve aziatike. Për Presidentin e Shteteve të Bashkuara, ai është arma më e madhe sekrete; një operativ i fshehtë i ngarkuar vetëm me misionet më të ndjeshme dhe të rrezikshme.",
     genre:
       "<a class='genre' href='#'>" +
       series[0] +
@@ -197,7 +206,9 @@ let movies = [
       "</a>",
     resolution: "<p>" + "HD" + "</p>",
     rate: 5.5,
+    link: "https://www.filma24.pl/the-presidents-man-2000/",
   },
+  
 ];
 
 let moviesHTML = ""; // an empty string for products to put in HTML
@@ -210,12 +221,12 @@ movies.forEach((movie, index) => {
     <div class="res-and-rate">${movie.resolution} ${movie.rate}</div>
     <img class="thumbnail" src="${movie.image}">
     <div class="blip-play-btn">
-    <i class="fa-solid fa-play"></i>
+    <a href="${movie.link}" target="_blank"><i class="fa-solid fa-play"></i></a>
     </div>
     </div>
     <h1 class='main-title'>${movie.title} ${movie.year}</h1>
     <h2 class='desc'>${movie.description}</h2>
-    ${movie.genre}
+    <a>${movie.genre}</a>
     </div>
     `;
 

@@ -29,6 +29,7 @@ body {
 }
 /* Header */
 header {
+  padding: 15px 0;
   margin-bottom: 50px;
 }
 header .container {
@@ -84,7 +85,7 @@ header .container .search input {
   background: none;
   outline: none;
   border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   padding: 10px;
   color: #fff;
@@ -162,6 +163,7 @@ img.thumbnail {
 }
 
 .movie-box:hover > .blip-play-btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,6 +193,10 @@ img.thumbnail {
   scale: 1.1;
   cursor: pointer;
   animation: scale 2s infinite;
+}
+
+.movie-box:hover > .blip-play-btn > a {
+  color: #fff;
 }
 
 @keyframes scale {
