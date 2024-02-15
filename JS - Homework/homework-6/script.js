@@ -13,7 +13,7 @@ let cars = [
     brand: "vw".toUpperCase(),
     type: "5",
     model: "2012",
-    isDiesel: true,
+    isDiesel: false,
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ let cars = [
     img: "./imgs/audi-model-r8.png",
     brand: "Audi".toUpperCase(),
     type: "R8",
-    model: "2016  ",
+    model: "2016",
     isDiesel: false,
   },
 ];
@@ -39,6 +39,8 @@ document.write(
 );
 
 cars.forEach((car) => {
+  let diesel = "This is not ecologic";
+  let energy = "This is ecologic";
   let mainForEach = `
             <tr>
             <td>${car.id}</td>
@@ -62,7 +64,13 @@ cars.forEach((car) => {
             ${car.brand}</td>
             <td>${car.model}</td>
             <td>${car.type}</td>
-            <td>${car.isDiesel}</td>
+            <td>`;
+    if (car.isDiesel == true) {
+      document.write(`${diesel}`);
+    } else {
+      document.write(`${energy}`);
+    }
+    `</td>
             </tr>   
 `;
   }
@@ -78,7 +86,13 @@ cars.forEach((car) => {
             ${car.brand}</td>
             <td>${car.model}</td>
             <td>${car.type}</td>
-            <td>${car.isDiesel}</td>
+            <td>`;
+    if (car.isDiesel == true) {
+      document.write(`${diesel}`);
+    } else {
+      document.write(`${energy}`);
+    }
+    `</td>
             </tr>   
 `;
   }
@@ -94,12 +108,37 @@ cars.forEach((car) => {
             ${car.brand}</td>
             <td>${car.model}</td>
             <td>${car.type}</td>
-            <td>${car.isDiesel}</td>
+            <td>`;
+    if (car.isDiesel == true) {
+      document.write(`${diesel}`);
+    } else {
+      document.write(`${energy}`);
+    }
+    `</td>
             </tr>   
 `;
   }
 
   document.write(mainForEach);
+  if (checkAudi == 0) {
+    mainForEach = `
+            <tr class='audi'>
+            <td>${car.id}</td>
+            <td class='img-and-title'>
+            <img src='${car.img}'>
+            ${car.brand}</td>
+            <td>${car.model}</td>
+            <td>${car.type}</td>
+            <td>`;
+    if (car.isDiesel == true) {
+      document.write(`${diesel}`);
+    } else {
+      document.write(`${energy}`);
+    }
+    `</td>
+            </tr>   
+`;
+  }
 });
 
 document.write(`</table>`);

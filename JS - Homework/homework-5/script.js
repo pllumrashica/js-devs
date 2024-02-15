@@ -208,7 +208,6 @@ let movies = [
     rate: 5.5,
     link: "https://www.filma24.pl/the-presidents-man-2000/",
   },
-  
 ];
 
 let moviesHTML = ""; // an empty string for products to put in HTML
