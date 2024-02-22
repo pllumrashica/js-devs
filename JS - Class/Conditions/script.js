@@ -77,7 +77,7 @@ if (x > 3) {
 let firstName = "Pellumb";
 let lastName = "Rashica";
 let age = 19;
-//firstName[0] === firstName[0].toUpperCase()
+//firstName[0] === firstName[0].toUpperCase() this is to check if first letter is with uppercase.
 if (age > 18 && firstName[0] === firstName[0].toUpperCase()) {
   document.write(`<h1>Ju jeni nder 18 vite</h1>`);
 } else if (age > 18 && firstName.includes("a")) {
