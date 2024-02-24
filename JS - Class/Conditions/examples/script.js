@@ -43,20 +43,13 @@ let passwordFour = ".Pellumb";
 let passwordFourLength = passwordFour.length;
 let passwordFourIncludes = passwordFour[0].includes(".");
 
-if (passwordFourLength > 3 && passwordFour[0].includes(".")) {
+if (passwordFourLength < 3 && passwordFourIncludes) {
   console.log("Passwordi nuk eshte ne rregull");
 } else if (
-  (passwordFourLength > 3 &&
-    passwordFour[0] == passwordFourIncludes &&
-    passwordFour.trimStart()) ||
-  passwordFour.trimEnd()
+  passwordFourLength > 3 && passwordFourIncludes && (passwordFour.trimStart() || passwordFour.trimEnd())
 ) {
   console.log("Passswordi eshte invalid");
-} else if (
-  passwordFourLength > 3 &&
-  passwordFour[0] == passwordFourIncludes &&
-  passwordFour.trim()
-) {
+} else if (passwordFourLength > 3 && passwordFourIncludes == false) {
   console.log("Passwordi osht ok");
 } else {
   console.log("Nuk keni shkruar asnje karakter");
