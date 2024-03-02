@@ -34,8 +34,8 @@ let employers = [
     firstName: "Pellumb",
     lastName: "Sadiku",
     age: 18,
-    jobTitle: "Team-Lead",
-    personalNumber: 100200500,
+    jobTitle: "Back-End Developer",
+    personalNumber: 100200600,
     absence: 25,
     weeklyHours: 23, // 48hours
   },
@@ -59,11 +59,11 @@ for (let i = 0; i < employers.length; i++) {
   }
   let bgColorStyle = rowColor
     ? `background-color:${rowColor};color:white;`
-    : ""; // Set background color style if there's a color defined
+    : "";
 
-  let weeklyHoursCellContent = employers[i].weeklyHours;
+  let weeklyHoursContent = employers[i].weeklyHours;
   if (rowColor === "green") {
-    weeklyHoursCellContent += " bonus extra";
+    weeklyHoursContent += " bonus extra";
   }
 
   document.write(`<tr style='${bgColorStyle}'>
@@ -71,7 +71,7 @@ for (let i = 0; i < employers.length; i++) {
   <td>${employers[i].age}</td>
   <td>${employers[i].jobTitle}</td>
   <td>${employers[i].personalNumber}</td>
-  <td>${weeklyHoursCellContent}</td>
+  <td>${weeklyHoursContent}</td>
   <td>${employers[i].absence}</td>
   </tr>`);
 }
