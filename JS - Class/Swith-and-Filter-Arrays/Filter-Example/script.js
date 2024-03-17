@@ -28,6 +28,32 @@ let employes = [
     department: "Driver",
   },
 ];
+document.write(`
+<table>
+<tr>
+<th>id</th>
+<th>firstName</th>
+<th>lastName</th>
+<th>age</th>
+<th>department</th>
+</tr>
+`);
+
+employes.forEach((employe) => {
+  document.write(`
+   <tr>
+            <td>${employe.id}</td>
+            <td>${employe.firstName}</td>
+            <td>${employe.lastName}</td>
+            <td>${employe.age}</td>
+            <td>${employe.department}</td>
+        </tr>
+   `);  
+});
+
+document.write(`
+</table>   
+`);
 
 document.write(`
 <table>
