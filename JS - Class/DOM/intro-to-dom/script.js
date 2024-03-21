@@ -15,4 +15,3 @@ firstTag.innerText = "Hello";
 firstTag.style.color = "red";
 firstTag.style.background = "blue";
 firstTag.style.fontSize = "59px";
-
