@@ -41,5 +41,3 @@ addAttribute.textContent = "Google";
 addAttribute.setAttribute("href", "https://www.google.com");
 console.log(addAttribute);
 
-// Homework
-// 
