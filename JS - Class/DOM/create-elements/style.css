@@ -1,0 +1,12 @@
+.mainRow {
+  display: flex;
+}
+
+.column {
+  flex-basis: 33.33%;
+  height: 100PX;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
