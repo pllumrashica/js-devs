@@ -65,11 +65,26 @@ function newRow(col, color) {
       mainRow.appendChild(column);
       column.textContent = "TEST";
     }
-  } else {
-    console.log("test");
+  } else if (col === 1) {
+    for (let i = 0; i <= 1; i++) {
+      let column = document.createElement("div");
+      column.setAttribute("class", "column");
+      column.style.background = color;
+      mainRow.appendChild(column);
+      column.textContent = "TEST";
+    }
+  } else if (col === 0) {
+    for (let i = 0; i <= 0; i++) {
+      let column = document.createElement("div");
+      column.setAttribute("class", "column");
+      column.style.background = color;
+      mainRow.appendChild(column);
+      column.textContent = "TEST";
+    }
   }
 
   mainContainer.appendChild(mainRow);
 }
 
 newRow(2, "red");
+newRow(2, "blue");
