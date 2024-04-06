@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="field">
+          <img src="./imgs/to-do-list.png" alt="" />
+          <h1>Shopping List</h1>
+        </div>
+        <input type="text" id="itemInput" placeholder="Enter item" />
+        <button id="btn" onclick="addItem()">
+          <i class="fa-solid fa-plus"></i>Add Item
+        </button>
+        <span>Filter Items</span>
+        <input type="text" id="filterInput" placeholder="Search" />
+        <button id="search" onclick="searchItem()">Search</button>
+        <ul id="shoppingList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

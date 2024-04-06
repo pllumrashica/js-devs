@@ -2,7 +2,7 @@ function addRowAndCols(cols) {
   let cards = [
     {
       id: 1,
-      title: "Card 1",
+      title: "test 1",
       img: "./imgs/andrea-mq-tIqu_dH3d_0-unsplash.jpg",
       desc: "Far far away,behind the word mountans, far from the countries Vokalia and Consnantia,there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the Semntics, a large language ocean.",
       btn1: "LIKE",
