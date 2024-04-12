@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Homework 12 | JAVASCRIPT</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div class="row">
+        <div class="col">
+          <div class="car" id="car">
+            <img src="./imgs/car-01.png" alt="Car" />
+          </div>
+          <button id="clickEvent" class="click-event">Click</button>
+        </div>
+        <div class="col">
+          <div class="wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <div class="wishlist-count">
+              <h2 class="wishlist-number" id="wishlistNumber">0</h2>
+            </div>
+          </div>
+          <button id="doubleClickEvent" class="double-click-event">
+            Double Click
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button id="contextMenu" class="context-menu">Right Click</button>
+        </div>
+        <div class="col">
+          <button id="mouseDown" class="mouse-down-event">
+            Click Mouse Down
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
