@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 /* Click Btn */
@@ -59,7 +60,11 @@ body {
 .click-event,
 .double-click-event,
 .context-menu,
-.mouse-down-event {
+.mouse-down-event,
+.mouse-up-event,
+.wheel-event,
+.mouse-over-event,
+.mouse-out-event {
   padding: 12px 40px;
   outline: none;
   border: none;
@@ -97,4 +102,40 @@ h2.wishlist-number {
 
 button {
   cursor: pointer;
+}
+
+#contextMenuEventBtn {
+  margin: 80px 0 0 0;
+}
+
+ul#nav {
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  border: 2px solid rebeccapurple;
+  padding: 15px;
+}
+
+ul#nav > li {
+  list-style-type: none;
+  margin: 12px 0;
+}
+
+ul#nav > li > a {
+  font-weight: 800;
+  text-decoration: none;
+  color: #000;
+  transition: all 350ms ease-in-out;
+}
+
+ul#nav > li > a:hover {
+  color: rebeccapurple;
+}
+
+#removeBg {
+  background: url(./imgs/bg.png);
+  background-size: 100% 100%;
+  transition: all 350ms ease-in-out;
 }

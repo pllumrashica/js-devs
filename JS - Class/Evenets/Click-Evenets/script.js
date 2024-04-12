@@ -78,6 +78,6 @@ saveBtn.addEventListener("dblclick", doubleClickEvent);
 saveBtn.addEventListener("contextmenu", contextMenuClickEvent);
 saveBtn.addEventListener("mousedown", mouseDownClickEvent);
 saveBtn.addEventListener("mouseup", mouseUpClickEvent);
-saveBtn.addEventListener("wheel", wheelEvent);
 saveBtn.addEventListener("mouseover", mouseOverEvent);
 saveBtn.addEventListener("mouseout", mouseOutEvent);
+saveBtn.addEventListener("wheel", wheelEvent);

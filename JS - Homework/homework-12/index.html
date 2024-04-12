@@ -37,12 +37,43 @@
 
       <div class="row">
         <div class="col">
-          <button id="contextMenu" class="context-menu">Right Click</button>
+          <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button id="contextMenuEventBtn" class="context-menu">
+            Right Click
+          </button>
         </div>
-        <div class="col">
+        <div class="col" id="changeBg">
           <button id="mouseDown" class="mouse-down-event">
             Click Mouse Down
           </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col" id="changeBgToBlue">
+          <button id="mouseUpEvent" class="mouse-up-event">
+            Click Mouse Up
+          </button>
+        </div>
+        <div class="col" id="changeBgImg">
+          <button id="mouseOver" class="mouse-over-event">Mouse Over</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col" id="removeBg">
+          <button id="mouseOutEvent" class="mouse-out-event">Mouse Out</button>
+        </div>
+        <div class="col" id="wheel">
+          <div class="car" id="car2">
+            <img src="./imgs/car-01.png" alt="Car" />
+          </div>
+          <button id="wheelEventBtn" class="wheel-event">Wheel</button>
         </div>
       </div>
     </div>
