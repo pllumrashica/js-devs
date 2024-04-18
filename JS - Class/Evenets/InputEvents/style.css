@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+}
+
+input {
+  padding: 12px;
+}
