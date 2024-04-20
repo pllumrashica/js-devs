@@ -15,6 +15,7 @@ let ageHeading = document.getElementById("ageHeading");
 let birthdayHeading = document.getElementById("birthdayHeading");
 let genderHeading = document.getElementById("genderHeading");
 let languageHeading = document.getElementById("languageHeading");
+let languageSecondHeading = document.getElementById("languageSecondHeading");
 
 const firstNameInputValue = (e) => {
   console.log(e.target.value);
@@ -44,8 +45,13 @@ genderInput.forEach((gender) => {
 
 languageInput.forEach((language) => {
   language.addEventListener("change", (e) => {
-    console.log(e.target.value);
-    languageHeading.innerText = e.target.value;
+    console.log(e.target);
+    if (e.target.value == "Albanian") {
+      languageHeading.innerText = e.target.value;
+    }
+    if (e.target.value == "English") {
+      languageSecondHeading.innerText = e.target.value;
+    }
   });
 });
 
