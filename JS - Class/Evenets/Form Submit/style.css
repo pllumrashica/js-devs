@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ddd;
+}
+
+.container {
+  padding: 100px 0;
+}
+
+.container .hero-section {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .form-box {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #ededed;
+  padding: 12px;
+}
+
+.container .form-box .row {
+  display: flex;
+  column-gap: 20px;
+  margin: 0 0 20px 0;
+}
+
+.container .form-box .row .field {
+  flex-basis: 50%;
+}
+
+.container .form-box .row .field label {
+  display: block;
+}
+
+.container .form-box .row .field label span.required {
+  color: red;
+}
+
+.container .form-box .row .field input {
+  padding: 12px;
+  width: 100%;
+}
+
+.container .form-box .row .last-field {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.container .form-box .row .last-field textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 12px;
+}
+
+.container .form-box .row .last-field input {
+  width: auto;
+}
+
+.send-btn {
+  width: 25%;
+  margin: 0 0 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 12px 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  transition: all 350ms ease-in-out;
+}
+
+.send-btn:hover {
+  background-color: #747474;
+  color: #000;
+  cursor: pointer;
+}

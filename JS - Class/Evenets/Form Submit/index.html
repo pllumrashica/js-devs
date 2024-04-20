@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submit JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-section">
+        <h1>Contact Us</h1>
+        <p>Contact us for more information.</p>
+      </div>
+
+      <div class="form-box">
+        <form action="" id="formId">
+          <div class="row">
+            <div class="field">
+              <label for="">First Name <span class="required">*</span></label>
+              <input type="text" name="firstName" id="firstNameInput" />
+            </div>
+            <div class="field">
+              <label for="">Last Name <span class="required">*</span></label>
+              <input type="text" name="lastName" id="lastNameInput" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="">Email <span class="required">*</span></label>
+              <input type="emal" name="email" id="emailInput" />
+            </div>
+            <div class="field">
+              <label for="">Phone Number <span class="required">*</span></label>
+              <input type="text" name="phoneNumber" id="phoneNumberInput" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field last-field">
+              <label for="">Message <span class="required">*</span></label>
+              <textarea
+                name="message"
+                id="yourMessage"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field last-field">
+              <label>Under Age <span class="required">*</span></label>
+              <input type="radio" name="age" id="underAge" />
+              <label>Mid Age <span class="required">*</span></label>
+              <input type="radio" name="age" id="underAge" />
+              <label>High Age <span class="required">*</span></label>
+              <input type="radio" name="age" id="underAge" />
+            </div>
+          </div>
+          <button type="submit" class="send-btn" id="submitBtn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
