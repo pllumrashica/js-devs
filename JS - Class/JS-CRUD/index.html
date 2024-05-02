@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript CRUD</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="studentTitle">Student Management System</h1>
+
+    <form id="addStudentForm" class="student-form">
+      <div class="field">
+        <label for="firstName">firstName</label>
+        <input
+          type="text"
+          placeholder="First Name"
+          id="studentFirstName"
+          name="firstName"
+        />
+      </div>
+
+      <div class="field">
+        <label for="firstName">lastName</label>
+        <input
+          type="text"
+          placeholder="Last Name"
+          id="studentLastName"
+          name="lastName"
+        />
+      </div>
+      <div class="field">
+        <label for="firstName">Age</label>
+        <input type="number" placeholder="age" id="studentAge" name="age" />
+      </div>
+      <div class="field">
+        <select name="gender" id="studentGender">
+          <option value="male" name="gender">Male</option>
+          <option value="female" name="gender">Female</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="birthday">Birthday</label>
+        <input
+          type="date"
+          placeholder="Birthday"
+          id="studentBirthday"
+          name="birthday"
+        />
+      </div>
+      <div class="field">
+        <label for="birthday">Class</label>
+        <input
+          type="number"
+          placeholder="Class"
+          id="studentClass"
+          name="class"
+        />
+      </div>
+      <button id="createBtn">Create</button>
+    </form>
+
+    <table id="studentTable" class="student-table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Birthday</th>
+          <th>Class</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Student details will be dynamically added here -->
+      </tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>

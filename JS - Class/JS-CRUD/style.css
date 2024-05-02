@@ -1,0 +1,52 @@
+/* Student Table */
+.studentTitle {
+  text-align: center;
+}
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Student Form */
+.student-form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.student-form label {
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.student-form input[type="text"],
+.student-form input[type="number"],
+.student-form input[type="date"],
+.student-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.student-form button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.student-form button:hover {
+  background-color: #45a049;
+}

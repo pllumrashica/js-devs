@@ -18,7 +18,13 @@ const addTodoListFunction = (task) => {
   let removeBtn = document.createElement("button");
   removeBtn.setAttribute("id", "removeList");
   removeBtn.innerHTML = "Remove";
+  document.getElementById("listItems").addEventListener("click", (e) => {
+    if (e.target.id === "removeList") {
+      e.target.parentElement.remove();
+    }
+  });
 
+  list.appendChild(removeBtn);
   ul.appendChild(list);
 };
 
