@@ -1,6 +1,6 @@
 const studentForm = document.getElementById("addS");
 const studentTable = document.getElementById("studentTable");
-localStorage.clear();
+// localStorage.clear();
 
 const loadStudents = () => {
   let students = JSON.parse(localStorage.getItem("students")) || [];
@@ -27,8 +27,11 @@ const loadStudents = () => {
       students.splice(index, 1);
       localStorage.setItem("students", JSON.stringify(students));
     };
+    deleteBtn.setAttribute("class", "delete-btn");
+
     actionsBtn.appendChild(deleteBtn);
     let editBtn = document.createElement("button");
+    editBtn.setAttribute("class", "edit-btn");
     editBtn.innerHTML = "Edit";
     editBtn.onclick = function () {
       // document.getElementById("id").value = tr.cells[0].innerHTML;
