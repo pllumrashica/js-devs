@@ -3,6 +3,7 @@ let firstNameInput = document.getElementById("firstNameInput");
 let lastNameInput = document.getElementById("lastNameInput");
 let ageInput = document.getElementById("ageInput");
 let employyes = [];
+let container = document.getElementById("container");
 
 const renderEmployees = () => {
   let table = document.createElement("table");
@@ -15,6 +16,17 @@ const renderEmployees = () => {
   </tr>
   </thead>
   `;
+  let tableBody = document.createElement("tbody");
+  employees.forEach((employee) => {
+    let row = document.createElement("tr");
+    row.innerHTML = `
+    <td>${employee.firstName}</td>
+    <td>${employee.lastName}</td>
+    <td>${employee.age}</td>
+    `;
+  });
+  table.appendChild(tableBody);
+  container.appendChild(row);
 };
 
 const createElmployee = (e) => {
