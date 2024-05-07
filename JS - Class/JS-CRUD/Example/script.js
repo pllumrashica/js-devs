@@ -4,6 +4,19 @@ let lastNameInput = document.getElementById("lastNameInput");
 let ageInput = document.getElementById("ageInput");
 let employyes = [];
 
+const renderEmployees = () => {
+  let table = document.createElement("table");
+  table.innerHTML = `
+  <thead>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Age</th>
+  </tr>
+  </thead>
+  `;
+};
+
 const createElmployee = (e) => {
   e.preventDefault();
 
