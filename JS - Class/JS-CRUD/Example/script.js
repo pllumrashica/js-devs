@@ -16,17 +16,19 @@ const renderEmployees = () => {
   </tr>
   </thead>
   `;
+
   let tableBody = document.createElement("tbody");
-  employees.forEach((employee) => {
+  employyes.forEach((employee) => {
     let row = document.createElement("tr");
     row.innerHTML = `
     <td>${employee.firstName}</td>
     <td>${employee.lastName}</td>
     <td>${employee.age}</td>
     `;
+    tableBody.appendChild(row);
   });
   table.appendChild(tableBody);
-  container.appendChild(row);
+  container.appendChild(table);
 };
 
 const createElmployee = (e) => {
@@ -41,7 +43,10 @@ const createElmployee = (e) => {
   formData.id = employyes.length + 1;
 
   employyes.push(formData);
+  renderEmployees();
   console.log(employyes);
+  employeeForm.reset();
 };
 
+renderEmployees();  
 employeeForm.addEventListener("submit", createElmployee);
