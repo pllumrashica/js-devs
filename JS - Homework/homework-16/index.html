@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 16 | JavaScript</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="studentStats">
+      <div class="form-group">
+        <label>First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" name="lastName" id="lastName" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" name="age" id="age" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>School</label>
+        <input type="text" name="school" id="school" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Birthday</label>
+        <input type="date" name="birthDay" id="birthDay" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>Hobbies</label>
+        <div class="hobbies">
+          <input type="text" name="hobbies" id="hobbies" class="form-control" />
+          <button type="button" id="addHobby" class="btn btn-primary">
+            Add Hobby
+          </button>
+        </div>
+        <div class="hobies-row" id="hobbiesRow"></div>
+      </div>
+
+      <div class="address">
+        <h2>Address</h2>
+        <div class="field">
+          <div class="form-group">
+            <label>Street</label>
+            <input type="text" name="street" id="street" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>House Number</label>
+            <input
+              type="number"
+              name="houseNumber"
+              id="houseNumber"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" name="city" id="city" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Zip Code</label>
+            <input
+              type="number"
+              name="zipCode"
+              id="zipCode"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Comment</label>
+        <textarea class="form-control" name="comment" id="comment"></textarea>
+      </div>
+      <button type="submit" id="createBtn">Create</button>
+    </form>
+
+    <div id="studentsTable"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
