@@ -2,10 +2,19 @@ let employeeForm = document.getElementById("employeeId");
 let firstNameInput = document.getElementById("firstNameInput");
 let lastNameInput = document.getElementById("lastNameInput");
 let ageInput = document.getElementById("ageInput");
-let employyes = [];
+const savedEmployees = JSON.parse(localStorage.getItem("employees"));
+const initialEmployees = savedEmployees || [];
+let employyes = initialEmployees;
 let container = document.getElementById("container");
 
-const renderEmployees = () => {
+const savedEmployeesLocalStrogae = () => {
+  localStorage.setItem("employees", JSON.stringify(employyes));
+};
+
+
+
+const renderEmployees = (e) => {
+  container.innerHTML = "";
   let table = document.createElement("table");
   table.innerHTML = `
   <thead>
@@ -44,9 +53,15 @@ const createElmployee = (e) => {
 
   employyes.push(formData);
   renderEmployees();
+  savedEmployeesLocalStrogae();
   console.log(employyes);
   employeeForm.reset();
 };
 
-renderEmployees();  
 employeeForm.addEventListener("submit", createElmployee);
+renderEmployees();
+
+// localStorage.setItem("username", "Pllumi");
+// let getItems = localStorage.getItem("username");
+// console.log(getItems);
+// // localStorage.clear();
