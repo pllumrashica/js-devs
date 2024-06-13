@@ -4,14 +4,15 @@ let lastNameInput = document.getElementById("lastNameInput");
 let ageInput = document.getElementById("ageInput");
 const savedEmployees = JSON.parse(localStorage.getItem("employees"));
 const initialEmployees = savedEmployees || [];
+let employeeEditId = null;
 let employyes = initialEmployees;
 let container = document.getElementById("container");
+let submitBtn = document.getElementById("submitBtn");
+let isEditing = false;
 
 const savedEmployeesLocalStrogae = () => {
   localStorage.setItem("employees", JSON.stringify(employyes));
 };
-
-
 
 const renderEmployees = (e) => {
   container.innerHTML = "";
@@ -22,6 +23,7 @@ const renderEmployees = (e) => {
   <th>First Name</th>
   <th>Last Name</th>
   <th>Age</th>
+  <th>Actions</th>
   </tr>
   </thead>
   `;
@@ -33,11 +35,29 @@ const renderEmployees = (e) => {
     <td>${employee.firstName}</td>
     <td>${employee.lastName}</td>
     <td>${employee.age}</td>
+    <td>
+    <button onclick="editEmployee(${employee.id})">Edit</button>
+    <button>Delete</button>
+
+    </td>
     `;
     tableBody.appendChild(row);
   });
   table.appendChild(tableBody);
   container.appendChild(table);
+};
+
+const editEmployee = (employeeEditId) => {
+  console.log(employeeEditId);
+  let employee = employyes.find((employee) => employee.id == employeeEditId);
+
+  console.log(employee);
+  if (employee) {
+    firstNameInput.value = employee.firstName;
+    lastNameInput.value = employee.lastName;
+    ageInput.value = employee.age;
+    submitBtn.innerHTML = "Update";
+  }
 };
 
 const createElmployee = (e) => {
@@ -48,6 +68,9 @@ const createElmployee = (e) => {
     lastName: lastNameInput.value,
     age: ageInput.value,
   };
+if (isEditing) {
+  
+}
 
   formData.id = employyes.length + 1;
 

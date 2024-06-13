@@ -13,6 +13,7 @@ let houseNumber = document.getElementById("houseNumber");
 let city = document.getElementById("city");
 let zipCode = document.getElementById("zipCode");
 let comment = document.getElementById("comment");
+// localStorage.clear();
 
 const savedStudent = JSON.parse(localStorage.getItem("studentStats"));
 const initialStudent = savedStudent || [];
